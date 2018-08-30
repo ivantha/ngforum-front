@@ -7,10 +7,6 @@ const routes: Routes = [
     loadChildren: './settings/settings.module#SettingsModule'
   },
   {
-    path: 'profile',
-    loadChildren: './profile/profile.module#ProfileModule'
-  },
-  {
     path: 'editor',
     loadChildren: './editor/editor.module#EditorModule'
   },
