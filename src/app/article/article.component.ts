@@ -54,20 +54,6 @@ export class ArticleComponent implements OnInit {
     );
   }
 
-  onToggleFavorite(favorited: boolean) {
-    this.article.favorited = favorited;
-
-    if (favorited) {
-      this.article.favoritesCount++;
-    } else {
-      this.article.favoritesCount--;
-    }
-  }
-
-  onToggleFollowing(following: boolean) {
-    this.article.author.following = following;
-  }
-
   deleteArticle() {
     this.isDeleting = true;
 

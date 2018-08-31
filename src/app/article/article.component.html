@@ -19,19 +19,6 @@
           </button>
         </span>
 
-        <span [hidden]="canModify">
-          <app-follow-button
-            [profile]="article.author"
-            (toggle)="onToggleFollowing($event)">
-          </app-follow-button>
-
-          <app-favorite-button
-            [article]="article"
-            (toggle)="onToggleFavorite($event)">
-            {{ article.favorited ? 'Unfavorite' : 'Favorite' }} Article <span class="counter">({{ article.favoritesCount }})</span>
-          </app-favorite-button>
-        </span>
-
       </app-article-meta>
     </div>
   </div>
@@ -69,19 +56,6 @@
             (click)="deleteArticle()">
             <i class="ion-trash-a"></i> Delete Article
           </button>
-        </span>
-
-        <span [hidden]="canModify">
-          <app-follow-button
-            [profile]="article.author"
-            (toggle)="onToggleFollowing($event)">
-          </app-follow-button>
-
-          <app-favorite-button
-            [article]="article"
-            (toggle)="onToggleFavorite($event)">
-            {{ article.favorited ? 'Unfavorite' : 'Favorite' }} Article <span class="counter">({{ article.favoritesCount }})</span>
-          </app-favorite-button>
         </span>
 
       </app-article-meta>
